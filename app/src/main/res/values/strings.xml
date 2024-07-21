@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">BMI Räknare</string>
+    <string name="titel">BMI räknare</string>
+    <string name="min_fråga">Vilken grupp tillhör du?</string>
+    <string name="vikt_input">Vikt i Kg</string>
+    <string name="längd_input">Längd i m</string>
+    <string name="my_btn">Räkna!</string>
+    <string name="resultat">Ditt resultat visas här</string>
+</resources>

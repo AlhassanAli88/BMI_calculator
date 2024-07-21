@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/titel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/titel"
+        android:textSize="@dimen/big_font"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.428"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.022" />
+
+    <ImageView
+        android:id="@+id/my_image"
+        android:layout_width="400dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="68dp"
+        android:src="@drawable/bmi_r_knare"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.440"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titel" />
+
+
+    <TextView
+        android:id="@+id/min_fråga"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="@string/min_fråga"
+        android:textSize="@dimen/middle_font"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.481"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/my_image" />
+
+    <EditText
+        android:id="@+id/vikt_input"
+        android:layout_width="90dp"
+        android:layout_height="48dp"
+        android:hint="@string/vikt_input"
+        android:textSize="@dimen/small_font"
+        android:textAlignment="center"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/min_fråga" />
+
+
+    <EditText
+        android:id="@+id/längd_input"
+        android:layout_width="90dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="20dp"
+        android:hint="@string/längd_input"
+        android:textAlignment="center"
+        android:textSize="@dimen/small_font"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/vikt_input" />
+
+    <Button
+        android:id="@+id/my_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/my_btn"
+        android:textAlignment="center"
+        android:textSize="@dimen/small_font"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/längd_input" />
+
+    <TextView
+        android:id="@+id/resultat_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:text="@string/resultat"
+        android:textSize="@dimen/middle_font"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/längd_input" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
